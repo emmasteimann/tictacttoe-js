@@ -1,10 +1,63 @@
 <html>
 <head>
+<style type="text/css">
+  body{
+    font-family: sans-serif;
+    width: 400px;
+    margin: 0 auto;
+  }
+  h1{
+    text-align: center;
+  }
+  #game_board{
+    border-collapse:collapse;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #game_board tr{
+    border-bottom: #000 2px solid;
+    height: 60px;
+  }
+  #game_board tr:last-child{
+    border-bottom: 0;
+  }
+  #game_board td{
+    width: 60px;
+    border-right: #000 2px solid;
+    text-align: center;
+    cursor: pointer;
+  }
+  #game_board td:last-child{
+    border-right: 0;
+  }
+  #message_area{
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/tictactoe-manager.js"></script>
+<script type="text/javascript" src="js/tictactoe-ai.js"></script>
 </head>
 <body>
-  <div id="game_board">
-
-  </div>
+  <h1>TicTacToe!</h1>
+  <table id="game_board">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <div id="message_area"></div>
 </body>
 </html>
