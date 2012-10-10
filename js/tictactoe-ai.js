@@ -19,7 +19,7 @@ TicTacToeAi = (function() {
     var self = this;
     setTimeout(function(){
       self.chooseNextLogicalTile();
-    },500)
+    },200)
   }
   TicTacToeAi.prototype.chooseNextLogicalTile = function(element){
     var move_to_make = false;
